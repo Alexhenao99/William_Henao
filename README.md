@@ -2,7 +2,7 @@
 
 ¡Hola!
 
-Soy un desarrollador web Full Stack. Estoy enfocado en crear soluciones de alta calidad que sean fáciles de usar y que tengan un diseño atractivo, en este repo podrás ver como cree mi portafolio y/o podrás visitarlo <a href="http://www.google.com">aquí</a>.
+Soy un desarrollador web Full Stack, estoy enfocado en crear soluciones de alta calidad que sean fáciles de usar y que tengan un diseño atractivo, en este repo podrás ver como cree mi portafolio y/o podrás visitarlo <a href="http://www.google.com">aquí</a>.
 
 ## Tecnologías
 
