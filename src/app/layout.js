@@ -9,7 +9,7 @@ export const metadata = {
 }
 
 const Body = ({ className, children }) => (
-  <body className={`bg-bg text-text dark:bg-bg_dark dark:text-text_dark ${className}`}>
+  <body className={`min-h-screen bg-bg text-text dark:bg-bg_dark dark:text-text_dark ${className}`}>
     <DarkMode />
     {children}
   </body>
