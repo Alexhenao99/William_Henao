@@ -1,11 +1,12 @@
+import Link from 'next/link'
+import TypewriterEffect from '@/components/TypewriterEffect'
 import Image from 'next/image'
+
 import foto from '../images/photo CV.png'
 import correo from '../images/iconos/correo.png'
 import github from '../images/iconos/github.png'
 import linkedin from '../images/iconos/linkedin.png'
 import cv from '../images/iconos/cv.png'
-import Link from 'next/link'
-import TypewriterEffect from '@/components/TypewriterEffect'
 
 const Home = () => {
   return (
@@ -17,31 +18,47 @@ const Home = () => {
             <h3 className='text-base lg:text-4xl'>Desarrollador Web Full-Stack</h3>
             <TypewriterEffect />
           </section>
-          <p className='pb-14 lg:text-4xl text-center'>
+          <p className='pb-14 text-lg lg:text-3xl text-center'>
             Apasionado por la creación de soluciones innovadoras en el mundo digital. Durante mi formación he adquirido sólidos conocimientos en diferentes tecnologías y metodologías de desarrollo web, y estoy emocionado de aplicarlos en la práctica. Si bien no tengo una extensa experiencia
             profesional previa, estoy dispuesto a trabajar duro y a enfrentar nuevos desafíos para poder crecer y desarrollarme en esta apasionante carrera.
           </p>
           <section className='w-full flex items-end justify-around'>
-            <Image
-              src={correo}
-              alt='Icono de Correo'
-              className='w-12 h-12 lg:w-24 lg:h-24'
-            />
-            <Image
-              src={github}
-              alt='Icono de Github'
-              className='w-12 h-12 lg:w-24 lg:h-24'
-            />
-            <Image
-              src={linkedin}
-              alt='Icono de Linkedin'
-              className='w-12 h-12 lg:w-24 lg:h-24'
-            />
-            <Image
-              src={cv}
-              alt='Icono de CV'
-              className='w-12 h-12 lg:w-24 lg:h-24'
-            />
+            <Link href='/contact'>
+              <Image
+                src={correo}
+                alt='Icono de Correo'
+                className='w-12 h-12 lg:w-24 lg:h-24 hover:scale-110 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow'
+              />
+            </Link>
+            <Link
+              href='https://github.com/Alexhenao99'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Image
+                src={github}
+                alt='Icono de Github'
+                className='w-12 h-12 lg:w-24 lg:h-24 hover:scale-110 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow'
+              />
+            </Link>
+            <Link
+              href='https://www.linkedin.com/in/william-henao-29a2b2251/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Image
+                src={linkedin}
+                alt='Icono de Linkedin'
+                className='w-12 h-12 lg:w-24 lg:h-24 hover:scale-110 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow'
+              />
+            </Link>
+            <Link href='/cv'>
+              <Image
+                src={cv}
+                alt='Icono de CV'
+                className='w-12 h-12 lg:w-24 lg:h-24 hover:scale-110 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow'
+              />
+            </Link>
           </section>
         </section>
         <section className='flex justify-center items-center mx-4'>
@@ -51,14 +68,14 @@ const Home = () => {
             width={700}
             height={475}
             sizes='100vw'
-            className='w-96 lg:w-full lg:h-auto rounded-3xl shadow-text dark:shadow-text_secondary mb-8 lg:mb-0'
+            className='w-96 lg:w-full lg:h-auto rounded-3xl shadow-text dark:shadow-text_secondary mb-8 lg:mb-0 2xl:w-[530px]'
           />
         </section>
       </section>
       <section className='w-full flex justify-center pb-5 pt-16'>
         <Link
           href='/projects'
-          className='flex items-center justify-center text-lg lg:text-5xl  bg-bg_dark dark:bg-bg_dark_secondary rounded-[50px] text-text_dark w-48 h-12 lg:w-96 lg:h-24'
+          className='flex items-center justify-center text-lg hover:scale-105 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow lg:text-5xl  bg-bg_dark dark:bg-bg_dark_secondary rounded-[50px] text-text_dark w-48 h-12 lg:w-96 lg:h-24'
         >
           Proyectos
         </Link>
