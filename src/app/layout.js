@@ -15,10 +15,13 @@ const Body = ({ className, children }) => (
   </body>
 )
 
-const RootLayout = ({ children }) => {
+const RootLayout = ({ children, modal }) => {
   return (
     <html lang='en'>
-      <Body className={itim.className}>{children}</Body>
+      <Body className={itim.className}>
+        {children}
+        {modal}
+      </Body>
     </html>
   )
 }
