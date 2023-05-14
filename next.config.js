@@ -1,4 +1,5 @@
-/** @type {import('next').NextConfig} */
+// /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -7,6 +8,23 @@ const nextConfig = {
         hostname: 'static.nationalgeographic.es'
       }
     ]
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.pdf$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            publicPath: '/_next',
+            name: 'static/media/[name].[hash].[ext]',
+            esModule: false
+          }
+        }
+      ]
+    })
+
+    return config
   }
 }
 
