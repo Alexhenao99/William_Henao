@@ -2,7 +2,7 @@ const { default: Cv } = require('@/components/Cv')
 
 const CvPage = () => {
   return (
-    <section className='h-screen- w-full'>
+    <section className='h-screen w-full'>
       <Cv />
     </section>
   )
