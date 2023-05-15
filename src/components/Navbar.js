@@ -66,7 +66,7 @@ const NavBar = () => {
   }
 
   return (
-    <nav className='flex items-center justify-between flex-wrap h-16 py-4'>
+    <nav className='z-50 flex items-center justify-between flex-wrap h-16 py-4'>
       <section className='w-full relative flex items-center justify-center md:hidden'>
         <div className='w-full flex justify-center'>
           <h1 className='font-semibold text-3xl'>William Henao</h1>
