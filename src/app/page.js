@@ -75,7 +75,7 @@ const Home = () => {
       <section className='w-full flex justify-center pb-5 pt-16'>
         <Link
           href='/projects'
-          className='flex items-center justify-center text-lg hover:scale-105 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow lg:text-5xl  bg-bg_dark dark:bg-bg_dark_secondary rounded-[50px] text-text_dark w-48 h-12 lg:w-96 lg:h-24'
+          className='flex items-center justify-center text-lg hover:scale-105 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow lg:text-5xl  bg-bg_dark dark:bg-bg_dark_secondary rounded-[50px] text-text_dark dark:text-text w-48 h-12 lg:w-96 lg:h-24'
         >
           Proyectos
         </Link>
