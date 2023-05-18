@@ -36,7 +36,7 @@ const NavBar = () => {
       route: '/projects'
     },
     {
-      label: 'Habilidades',
+      label: 'Skills',
       route: '/skills'
     },
     {
