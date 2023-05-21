@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'static.nationalgeographic.es'
+        hostname: 'lh3.googleusercontent.com'
       }
     ]
   },
