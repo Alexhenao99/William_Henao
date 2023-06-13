@@ -1,8 +1,8 @@
 import DarkMode from '@/components/DarkMode'
 import './globals.css'
-import { Itim } from 'next/font/google'
+import { EB_Garamond } from 'next/font/google' // eslint-disable-line
 
-const itim = Itim({ weight: '400', subsets: ['latin'] })
+const ebGaramond = EB_Garamond({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'William Henao'
@@ -18,7 +18,7 @@ const Body = ({ className, children }) => (
 const RootLayout = ({ children, modal }) => {
   return (
     <html lang='en'>
-      <Body className={itim.className}>
+      <Body className={ebGaramond.className}>
         {children}
         {modal}
       </Body>
