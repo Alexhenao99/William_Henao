@@ -41,7 +41,7 @@ const Modal = ({ children }) => {
         className='relative h-[97%] rounded-3xl lg:h-[90%] bg-bg dark:bg-bg_dark m-3 lg:m-14'
       >
         <button
-          className='absolute z-50 top-0 right-0 px-3 text-5xl text-x_close hover:scale-150'
+          className='absolute z-50 top-0 right-2 px-3 text-5xl text-x_close hover:scale-150'
           onClick={onDismiss}
         >
           X
