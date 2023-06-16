@@ -1,10 +1,10 @@
 import { Sequelize } from 'sequelize'
 import * as pg from 'pg'
 
-// const ssl = {
-//   require: true,
-//   rejectUnauthorized: false // Solo si estás en desarrollo y no tienes certificado SSL
-// }
+const ssl = {
+  require: true,
+  rejectUnauthorized: false // Solo si estás en desarrollo y no tienes certificado SSL
+}
 
 const sequelize = new Sequelize({
   dialect: 'postgres',
@@ -15,7 +15,7 @@ const sequelize = new Sequelize({
   database: process.env.PGDATABASE,
   dialectModule: pg,
   dialectOptions: {
-    // ssl
+    ssl
   },
   logging: false // Se habilita para ver las consultas en la consola
 })
