@@ -23,7 +23,10 @@ const nextConfig = {
         }
       ]
     })
-
+    config.module = {
+      ...config.module,
+      exprContextCritical: false
+    }
     return config
   }
 }
