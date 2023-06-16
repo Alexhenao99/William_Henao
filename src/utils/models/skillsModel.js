@@ -18,6 +18,10 @@ const Skills = sequelize.define('Skills', {
   link: {
     type: DataTypes.TEXT,
     allowNull: false
+  },
+  group: {
+    type: DataTypes.ENUM('front', 'back', 'language', 'learning', 'soft_skills'),
+    allowNull: false
   }
 })
 
