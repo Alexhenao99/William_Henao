@@ -1,25 +1,38 @@
 import { Sequelize } from 'sequelize'
-import User from '../app/models/User'
+import * as pg from 'pg'
+
+// const ssl = {
+//   require: true,
+//   rejectUnauthorized: false // Solo si estás en desarrollo y no tienes certificado SSL
+// }
 
 const sequelize = new Sequelize({
   dialect: 'postgres',
   host: process.env.PGHOST,
   port: process.env.PGPORT,
-  database: process.env.PGDATABASE,
   username: process.env.PGUSER,
   password: process.env.PGPASSWORD,
+  database: process.env.PGDATABASE,
+  dialectModule: pg,
   dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false // Solo si estás usando un certificado autofirmado
-    }
-  }
+    // ssl
+  },
+  logging: false // Se habilita para ver las consultas en la consola
 })
 
-// Asociar los modelos con la instancia de Sequelize
-User.initialize(sequelize)
+// Establece la conexión con la base de datos
+sequelize
+  .authenticate()
+  .then(() => {
+    console.log('Conexión establecida exitosamente con la db PostgreSQL')
+  })
+  .catch((err) => {
+    console.error('No se pudo establecer la conexión con la base de datos PostgreSQL:', err)
+  })
 
-// Sincronizar modelos con la base de datos
-await sequelize.sync()
+// Sincroniza las tablas, para actualizarlas o crearlas
+sequelize
+  // .sync({ alter: true }) // ? Modifica o agrega las columnas declaradas si han sido modificadas
+  .sync()
 
-export default sequelize
+module.exports = sequelize
