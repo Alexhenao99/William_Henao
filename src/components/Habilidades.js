@@ -1,16 +1,25 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Slider from 'react-slick'
-import { skills } from '@/data/data'
 import Image from 'next/image'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import fetchSkills from '@/utils/fetchSkills'
 
 const Habilidades = ({ filtrado }) => {
   const [cursor, setCursor] = useState(false)
-  const skillsData = skills
+  const [skillsData, setSkills] = useState([])
+
+  useEffect(() => {
+    const getSkills = async () => {
+      const skillsData = await fetchSkills()
+      setSkills(skillsData)
+    }
+
+    getSkills()
+  }, [])
 
   const iconFiltered = (filtrado) => {
     const skills = skillsData.filter((skill) => skill.group === filtrado)
@@ -62,8 +71,10 @@ const Habilidades = ({ filtrado }) => {
             onMouseLeave={() => setCursor(false)}
           >
             <Image
-              src={skill.icon}
+              src={skill.image}
               alt={skill.name}
+              width={128}
+              height={128}
               className='h-32 w-auto mx-auto'
             />
             <div className={`${cursor ? 'block' : 'hidden'} absolute top-0 left-0 w-full h-full flex items-center justify-center`}>
