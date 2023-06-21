@@ -1,11 +1,24 @@
 'use client'
-import Slider from 'react-slick'
+
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { skills } from '@/data/data'
 import Image from 'next/image'
+import Slider from 'react-slick'
+import fetchSkills from '@/utils/fetchSkills'
+import { useEffect, useState } from 'react'
 
 const AllSkills = () => {
+  const [skills, setSkills] = useState([])
+
+  useEffect(() => {
+    const getSkills = async () => {
+      const skillsData = await fetchSkills()
+      setSkills(skillsData)
+    }
+
+    getSkills()
+  }, [])
+
   // Genera un orden aleatorio para las imágenes
   const randomizer = (skills) => {
     return skills.sort(() => Math.random() - 0.5)
@@ -18,8 +31,10 @@ const AllSkills = () => {
         className='my-4 lg:my-0 p-2 relative'
       >
         <Image
-          src={skill.icon}
+          src={skill.image}
           alt={skill.name}
+          width={50}
+          height={50}
           className='w-16 md:w-auto md:h-34 h-auto mx-auto'
         />
       </div>
