@@ -13,7 +13,9 @@ module.exports = {
       bg_modal_dark: 'rgba(79, 79, 79, 0.9)',
       circle: 'rgba(10, 25, 41, 0.95)',
       circle_dark: 'rgba(53, 108, 120, 0.95)',
-      x_close: '#DD2E44'
+      x_close: '#DD2E44',
+      label_f: 'rgba(10, 25, 41, 0.5)',
+      label_d: 'rgba(41, 10, 10, 0.5)'
     },
     dropShadow: {
       light_shadow: '5px 1px 20px rgba(0, 0, 0, 0.25)',
