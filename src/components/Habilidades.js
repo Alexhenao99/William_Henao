@@ -6,20 +6,20 @@ import Image from 'next/image'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import fetchSkills from '@/utils/fetchSkills'
 import LoadingSpin from './LoadingSpin'
+import { getSkills } from '@/utils/fetch/Skills'
 
 const Habilidades = ({ filtrado }) => {
   const [cursor, setCursor] = useState(false)
   const [skillsData, setSkills] = useState([])
 
   useEffect(() => {
-    const getSkills = async () => {
-      const skillsData = await fetchSkills()
+    const getSkillsData = async () => {
+      const skillsData = await getSkills()
       setSkills(skillsData)
     }
 
-    getSkills()
+    getSkillsData()
   }, [])
 
   const iconFiltered = (filtrado) => {

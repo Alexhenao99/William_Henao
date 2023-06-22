@@ -4,20 +4,21 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Image from 'next/image'
 import Slider from 'react-slick'
-import fetchSkills from '@/utils/fetchSkills'
 import { useEffect, useState } from 'react'
+
 import LoadingSpin from './LoadingSpin'
+import { getSkills } from '@/utils/fetch/Skills'
 
 const AllSkills = () => {
   const [skills, setSkills] = useState([])
 
   useEffect(() => {
-    const getSkills = async () => {
-      const skillsData = await fetchSkills()
+    const getSkillsData = async () => {
+      const skillsData = await getSkills()
       setSkills(skillsData)
     }
 
-    getSkills()
+    getSkillsData()
   }, [])
 
   // Genera un orden aleatorio para las imágenes

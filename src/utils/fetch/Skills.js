@@ -1,4 +1,4 @@
-const fetchSkills = () => {
+const getSkills = () => {
   return fetch('/api/skills', {
     next: {
       revalidate: 60
@@ -6,4 +6,4 @@ const fetchSkills = () => {
   }).then((response) => response.json())
 }
 
-export default fetchSkills
+export { getSkills }
