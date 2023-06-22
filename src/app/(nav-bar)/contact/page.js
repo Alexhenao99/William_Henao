@@ -1,9 +1,9 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { mail } from '@/utils/personalData'
 
 import whatsapp from '../../../images/iconos/whatsapp.png'
 import CopyButton from '@/components/CopyButton'
+import icon from '@/utils/icons'
 
 const Contact = () => {
   return (
@@ -17,7 +17,7 @@ const Contact = () => {
       <section className='w-full flex justify-center'>
         <a
           href={`mailto:${mail()}`}
-          className='flex items-center justify-center text-lg lg:my-7 hover:scale-105 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow lg:text-4xl bg-bg_dark dark:bg-bg_dark_secondary rounded-[20px] text-text_dark dark:text-text w-36 h-12 lg:w-64 lg:h-20'
+          className='flex items-center justify-center text-lg lg:my-7 hover:scale-105 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow lg:text-4xl bg-bg_dark dark:bg-bg_dark_secondary rounded-[20px] text-text_dark dark:text-text w-36 h-12 lg:w-64 lg:h-20 transition-all duration-300'
         >
           Escríbeme!
         </a>
@@ -29,11 +29,9 @@ const Contact = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <Image
-            src={whatsapp}
-            alt='Icono de WhatsApp'
-            className='w-12 h-12 mx-3 lg:w-24 lg:h-24 hover:scale-110 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow'
-          />
+          <section className='mx-2'>
+            {icon(whatsapp, 'Whatsapp')}
+          </section>
         </Link>
         <CopyButton />
       </section>
