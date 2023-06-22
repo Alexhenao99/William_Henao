@@ -7,6 +7,7 @@ import Image from 'next/image'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import fetchSkills from '@/utils/fetchSkills'
+import LoadingSpin from './LoadingSpin'
 
 const Habilidades = ({ filtrado }) => {
   const [cursor, setCursor] = useState(false)
@@ -59,6 +60,8 @@ const Habilidades = ({ filtrado }) => {
       }
     ]
   }
+
+  if (skillsData.length <= 0) return <LoadingSpin size={130} />
 
   return (
     <div className='display mx-8 mb-3'>
