@@ -34,7 +34,7 @@ const Modal = ({ children }) => {
   return (
     <div
       ref={overlay}
-      className='fixed z-10 left-0 right-0 top-0 bottom-0 bg-bg_modal dark:bg-bg_modal_dark'
+      className='fixed z-40 left-0 right-0 top-0 bottom-0 bg-bg_modal dark:bg-bg_modal_dark'
       onClick={onClick}
     >
       <div
