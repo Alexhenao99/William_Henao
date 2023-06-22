@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import TypewriterEffect from '@/components/TypewriterEffect'
-import Image from 'next/image'
 
 import correo from '../images/iconos/correo.png'
 import github from '../images/iconos/github.png'
 import linkedin from '../images/iconos/linkedin.png'
 import cv from '../images/iconos/cv.png'
 import AllSkills from '@/components/AllSkills'
+import icon from '@/utils/icons'
 
 const Home = () => {
   return (
@@ -23,42 +23,22 @@ const Home = () => {
             profesional previa, estoy dispuesto a trabajar duro y a enfrentar nuevos desafíos para poder crecer y desarrollarme en esta apasionante carrera.
           </p>
           <section className='w-full flex items-end justify-around'>
-            <Link href='/contact'>
-              <Image
-                src={correo}
-                alt='Icono de Correo'
-                className='w-12 h-12 lg:w-24 lg:h-24 hover:scale-110 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow'
-              />
-            </Link>
+            <Link href='/contact'> {icon(correo, 'Correo')} </Link>
             <Link
               href='https://github.com/Alexhenao99'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <Image
-                src={github}
-                alt='Icono de Github'
-                className='w-12 h-12 lg:w-24 lg:h-24 hover:scale-110 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow'
-              />
+              {icon(github, 'GitHub')}
             </Link>
             <Link
               href='https://www.linkedin.com/in/william-henao-29a2b2251/'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <Image
-                src={linkedin}
-                alt='Icono de Linkedin'
-                className='w-12 h-12 lg:w-24 lg:h-24 hover:scale-110 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow'
-              />
+              {icon(linkedin, 'Linkedin')}
             </Link>
-            <Link href='/cv'>
-              <Image
-                src={cv}
-                alt='Icono de CV'
-                className='w-12 h-12 lg:w-24 lg:h-24 hover:scale-110 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow'
-              />
-            </Link>
+            <Link href='/cv'>{icon(cv, 'Cv')}</Link>
           </section>
         </section>
         <section className='flex flex-col justify-center mx-1'>
@@ -70,7 +50,7 @@ const Home = () => {
       <section className='w-full flex justify-center pb-5 pt-16'>
         <Link
           href='/projects'
-          className='flex items-center justify-center text-lg hover:scale-105 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow lg:text-5xl  bg-bg_dark dark:bg-bg_dark_secondary rounded-[50px] text-text_dark dark:text-text w-48 h-12 lg:w-96 lg:h-24'
+          className='flex items-center justify-center text-lg hover:scale-105 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow transition-all duration-300 lg:text-5xl  bg-bg_dark dark:bg-bg_dark_secondary rounded-[50px] text-text_dark dark:text-text w-48 h-12 lg:w-96 lg:h-24'
         >
           Proyectos
         </Link>
