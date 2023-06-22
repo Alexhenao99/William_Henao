@@ -57,7 +57,7 @@ const Cards = ({ props }) => {
         onMouseLeave={handleMouseSectionOff}
       >
         {display && (
-          <div className='z-50 absolute bottom-0 px-2 h-24 w-[260px] bg-label_d text-text_dark text-4xl rounded-br-2xl rounded-bl-2xl'>
+          <div className='absolute bottom-0 px-2 h-24 w-[260px] bg-label_d text-text_dark text-4xl rounded-br-2xl rounded-bl-2xl'>
             En Desarrollo
             <section className='flex'>
               {Skills.slice(0, 5).map((skill) => ( // * slice limita a 5 la cantidad de habilidades a mostrar
