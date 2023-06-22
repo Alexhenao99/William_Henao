@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Slider from 'react-slick'
 import fetchSkills from '@/utils/fetchSkills'
 import { useEffect, useState } from 'react'
+import LoadingSpin from './LoadingSpin'
 
 const AllSkills = () => {
   const [skills, setSkills] = useState([])
@@ -99,6 +100,8 @@ const AllSkills = () => {
       }
     ]
   }
+
+  if (skills.length <= 0) return <LoadingSpin />
 
   return (
     <div className=''>
