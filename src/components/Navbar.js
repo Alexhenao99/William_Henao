@@ -57,7 +57,7 @@ const NavBar = () => {
       >
         <Link
           href={route}
-          className={`${endPoint === route ? 'text-text_secondary dark:text-text_dark md:bg-text dark:md:bg-text_secondary md:px-4 md:pt-5 md:pb-2 md:rounded-br-2xl md:rounded-bl-2xl md:text-text_dark dark:md:text-text' : 'text-text_dark dark:text-text md:text-text md:dark:text-text_dark'}`}
+          className={`${endPoint === route ? 'text-text_secondary dark:text-text_dark md:bg-text dark:md:bg-text_secondary md:px-4 md:pt-5 md:pb-2 md:rounded-br-2xl md:rounded-bl-2xl md:text-text_dark dark:md:text-text' : 'focus:cursor-wait text-text_dark dark:text-text md:text-text md:dark:text-text_dark'}`}
         >
           {label}
         </Link>
@@ -118,13 +118,13 @@ const NavBar = () => {
         leaveTo='opacity-0'
       >
         <div className='z-50 absolute top-14 right-12'>
-          <ul className='flex flex-col items-center text-3xl'>{pages()}</ul>
+          <ul className='flex flex-col items-center text-3xl focus:cursor-wait'>{pages()}</ul>
         </div>
       </Transition>
 
       <div className='hidden w-full md:block flex-grow lg:flex lg:items-center lg:w-auto'>
-        <div className='text-lg lg:flex-grow'>
-          <ul className='md:flex md:justify-around md:px-16 md:text-3xl'>{pages()}</ul>
+        <div className='text-lg lg:flex-grow '>
+          <ul className='md:flex md:justify-around md:px-16 md:text-3xl focus:cursor-wait'>{pages()}</ul>
         </div>
       </div>
     </nav>

@@ -23,7 +23,7 @@ const Home = () => {
             profesional previa, estoy dispuesto a trabajar duro y a enfrentar nuevos desafíos para poder crecer y desarrollarme en esta apasionante carrera.
           </p>
           <section className='w-full flex items-end justify-around'>
-            <Link href='/contact'> {icon(correo, 'Correo')} </Link>
+            <Link href='/contact' className='focus:cursor-wait'> {icon(correo, 'Correo')} </Link>
             <Link
               href='https://github.com/Alexhenao99'
               target='_blank'
@@ -38,7 +38,7 @@ const Home = () => {
             >
               {icon(linkedin, 'Linkedin')}
             </Link>
-            <Link href='/cv'>{icon(cv, 'Cv')}</Link>
+            <Link href='/cv' className='focus:cursor-wait'>{icon(cv, 'Cv')}</Link>
           </section>
         </section>
         <section className='flex flex-col justify-center mx-1'>
@@ -50,7 +50,7 @@ const Home = () => {
       <section className='w-full flex justify-center pb-5 pt-16'>
         <Link
           href='/projects'
-          className='flex items-center justify-center text-lg hover:scale-105 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow transition-all duration-300 lg:text-5xl  bg-bg_dark dark:bg-bg_dark_secondary rounded-[50px] text-text_dark dark:text-text w-48 h-12 lg:w-96 lg:h-24'
+          className='flex items-center justify-center text-lg focus:cursor-wait hover:scale-105 hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow transition-all duration-300 lg:text-5xl  bg-bg_dark dark:bg-bg_dark_secondary rounded-[50px] text-text_dark dark:text-text w-48 h-12 lg:w-96 lg:h-24'
         >
           Proyectos
         </Link>
