@@ -38,7 +38,7 @@ const Modal = ({ children }) => {
       onClick={onClick}
     >
       <div
-        className='relative h-[97%] rounded-3xl lg:h-[90%] bg-bg dark:bg-bg_dark m-3 lg:m-14'
+        className='relative h-[97%] rounded-3xl lg:h-[90%] bg-bg dark:bg-bg_dark m-3 lg:m-14 overflow-y-auto overflow-x-hidden'
       >
         <button
           className='absolute z-50 top-0 right-2 px-3 text-5xl text-x_close hover:scale-150'
