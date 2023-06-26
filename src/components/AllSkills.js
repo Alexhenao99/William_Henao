@@ -105,7 +105,7 @@ const AllSkills = () => {
   if (skills.length <= 0) return <LoadingSpin />
 
   return (
-    <div className=''>
+    <div>
       <section className='hidden lg:block'>
         <Slider {...settings}>{randomizer(skills).map((skill) => skillFnc(skill))}</Slider>
       </section>
