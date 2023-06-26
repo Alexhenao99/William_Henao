@@ -7,7 +7,8 @@ const getProjects = () => {
 }
 
 const getProjectsById = (id) => {
-  return fetch(`/api/skills/${id}`, {
+  console.log(id)
+  return fetch(`/api/projects/${id}`, {
     next: {
       revalidate: 60
     }
