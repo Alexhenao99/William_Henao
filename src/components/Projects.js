@@ -33,6 +33,7 @@ const Projects = () => {
         <Link
           href={`/projects/${project.id}`}
           key={project.id}
+          className='focus:cursor-wait'
         >
           <section>
             <Cards props={project} />
