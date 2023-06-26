@@ -18,7 +18,7 @@ module.exports = {
       label_d: 'rgba(41, 10, 10, 0.5)'
     },
     dropShadow: {
-      light_shadow: '5px 1px 20px rgba(0, 0, 0, 0.25)',
+      light_shadow: '5px 1px 20px rgba(0, 0, 0, 0.50)',
       dark_shadow: '5px 1px 20px rgba(255, 255, 255, 0.25)'
     }
   },
