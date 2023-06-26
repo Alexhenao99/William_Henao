@@ -33,7 +33,7 @@ const DarkMode = () => {
 
   return (
     <button
-      className='absolute p-2 z-50'
+      className='absolute p-2 z-40'
       onClick={handleToggle}
     >
       {isDarkMode
