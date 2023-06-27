@@ -14,7 +14,7 @@ const Home = () => {
       <section className='flex flex-col-reverse lg:grid lg:grid-cols-3'>
         <section className='grid lg:col-span-2 lg:justify-items-center px-2 lg:px-16'>
           <section className='flex flex-col items-center pb-8 lg:pb-16'>
-            <h1 className='text-3xl lg:text-7xl font-bold '>William Henao</h1>
+            <h1 className='text-5xl lg:text-7xl font-bold '>William Henao</h1>
             <h3 className='text-base lg:text-4xl'>Desarrollador Web Full-Stack</h3>
             <TypewriterEffect />
           </section>
