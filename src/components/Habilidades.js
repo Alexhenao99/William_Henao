@@ -81,7 +81,7 @@ const Habilidades = ({ filtrado }) => {
               className='h-32 w-auto mx-auto'
             />
             <div className={`${cursor ? 'block' : 'hidden'} absolute top-0 left-0 w-full h-full flex items-center justify-center`}>
-              <span className='px-3 text-2xl dark:bg-bg_dark dark:text-text_dark bg-text_secondary text-text rounded-3xl'>{skill.name}</span>
+              <span className='px-3 text-2xl text-center dark:bg-bg_dark dark:text-text_dark bg-text_secondary text-text rounded-3xl'>{skill.name}</span>
             </div>
           </div>
         ))}
