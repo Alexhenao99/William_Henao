@@ -37,7 +37,7 @@ const AllSkills = () => {
           alt={skill.name}
           width={50}
           height={50}
-          className='w-16 md:w-auto md:h-34 h-auto mx-auto'
+          className='w-16 md:h-34 h-auto mx-auto'
         />
       </div>
     )
