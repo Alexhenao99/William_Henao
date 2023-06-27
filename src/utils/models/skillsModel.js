@@ -20,7 +20,7 @@ const Skills = sequelize.define('Skills', {
     allowNull: false
   },
   group: {
-    type: DataTypes.ENUM('front', 'back', 'language', 'learning', 'soft_skills'),
+    type: DataTypes.ENUM('front', 'back', 'language', 'learning', 'soft_skills', 'otros'),
     allowNull: false
   }
 })
