@@ -21,7 +21,7 @@ const Cards = ({ props }) => {
     return (
       <section
         style={{ backgroundImage: `url(${new URL(`${image[0].link}`)})`, display: 'flex', alignItems: 'end' }}
-        className='bg-no-repeat bg-cover bg-center h-[398px] w-[261px] hover:border-b hover:border-r hover:border-blue-900 m-3 rounded-2xl hover:scale-110 shadow-md hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow blur-sm hover:blur-0 transition-all duration-300'
+        className='bg-no-repeat bg-cover bg-center h-[398px] w-[261px] hover:border-b hover:border-r hover:border-blue-900 m-3 rounded-2xl hover:scale-110 shadow-md hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow transition-all duration-300'
         onMouseEnter={handleMouseSectionOn}
         onMouseLeave={handleMouseSectionOff}
       >
@@ -52,7 +52,7 @@ const Cards = ({ props }) => {
     return (
       <section
         style={{ backgroundImage: `url(${new URL(`${image[0].link}`)})`, backdropFilter: 'grayscale(100%)' }}
-        className='relative grayscale hover:grayscale-0 blur-sm hover:blur-[1px] bg-no-repeat bg-cover bg-center h-[398px] w-[261px] hover:border-b hover:border-r hover:border-blue-900 m-3 rounded-2xl hover:scale-110 shadow-md hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow transition-all duration-300'
+        className='relative grayscale hover:grayscale-0 bg-no-repeat bg-cover bg-center h-[398px] w-[261px] hover:border-b hover:border-r hover:border-blue-900 m-3 rounded-2xl hover:scale-110 shadow-md hover:drop-shadow-light_shadow dark:hover:drop-shadow-dark_shadow transition-all duration-300'
         onMouseEnter={handleMouseSectionOn}
         onMouseLeave={handleMouseSectionOff}
       >
