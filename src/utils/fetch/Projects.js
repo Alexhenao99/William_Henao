@@ -1,7 +1,8 @@
 const getProjects = () => {
   // return fetch('/api/projects', {
   return fetch('https://williamhenao-production.up.railway.app/api/projects', {
-
+    method: 'GET',
+    mode: 'cors',
     next: {
       revalidate: 60
     }
@@ -12,7 +13,8 @@ const getProjectsById = (id) => {
   console.log(id)
   // return fetch(`/api/projects/${id}`, {
   return fetch(`https://williamhenao-production.up.railway.app/api/projects/${id}`, {
-
+    method: 'GET',
+    mode: 'cors',
     next: {
       revalidate: 60
     }

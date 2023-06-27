@@ -1,7 +1,7 @@
 const getSkills = () => {
-  // return fetch('/api/skills', {
-  return fetch('https://williamhenao-production.up.railway.app/api/skills', {
-
+  return fetch('/api/skills', {
+    method: 'GET',
+    mode: 'cors',
     next: {
       revalidate: 60
     }
