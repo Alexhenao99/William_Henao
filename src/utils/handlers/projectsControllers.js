@@ -94,7 +94,7 @@ const updateProjects = async (id, { title, description, repo, web, status, image
     await project.setSkills(skills)
     await project.save()
 
-    return 'La oferta se ha actualizada'
+    return 'El proyecto se ha actualizada'
   } catch (error) {
     console.error({ error: error.message, place: 'updateProjects' })
     return error
