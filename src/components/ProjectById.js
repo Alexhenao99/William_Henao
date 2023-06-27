@@ -52,7 +52,7 @@ const ProjectById = ({ id }) => {
               className='mx-2'
             />
             <div className={`${cursor ? 'block' : 'hidden'} absolute top-0 left-0 w-full h-full flex items-center justify-center`}>
-              <span className='px-3 text-xl dark:bg-bg_dark_secondary dark:text-text bg-bg_dark text-text_dark rounded-3xl'>{skill.name}</span>
+              <span className='px-3 text-xl text-center dark:bg-bg_dark_secondary dark:text-text bg-bg_dark text-text_dark rounded-3xl'>{skill.name}</span>
             </div>
           </section>
         ))}
