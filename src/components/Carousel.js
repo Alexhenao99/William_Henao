@@ -34,10 +34,10 @@ const Carousel = ({ images }, { title }) => {
           className='z-10 w-8 h-8 bg-gray-800 text-white rounded-full'
           onClick={handlePrevious}
         >
-          <span className='inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'>
+          <span>
             <svg
               aria-hidden='true'
-              className='w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800'
+              className='w-5 h-5 text-bg_dark sm:w-6 sm:h-6 dark:text-text_secondary'
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
@@ -78,10 +78,10 @@ const Carousel = ({ images }, { title }) => {
           className='z-10 w-8 h-8 bg-gray-800 text-white rounded-full'
           onClick={handleNext}
         >
-          <span className='inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'>
+          <span>
             <svg
               aria-hidden='true'
-              className='w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800'
+              className='w-5 h-5 text-bg_dark sm:w-6 sm:h-6 dark:text-text_secondary'
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
