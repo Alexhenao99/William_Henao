@@ -1,6 +1,6 @@
 const getProjects = () => {
   // return fetch('/api/projects', {
-  return fetch('https://williamhenao-production.up.railway.app/api/projects', {
+  return fetch('/api/projects', {
     method: 'GET',
     mode: 'cors',
     next: {
