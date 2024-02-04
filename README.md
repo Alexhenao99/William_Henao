@@ -2,7 +2,7 @@
 
 ![image](https://github.com/Alexhenao99/William_Henao/assets/105896417/4a864c2a-dc37-43f3-93b0-8c40dccdd665)
 
-- <a href="https://william-henao.vercel.app/" target="_blank">Ir a la Web</a>
+- <a href="https://william-henao.up.railway.app" target="_blank">Ir a la Web</a>
 
 ¡Hola!
 
