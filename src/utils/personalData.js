@@ -1,6 +1,6 @@
 const data = {
   correo: 'waha0522@gmail.com',
-  cvUrl: 'https://drive.google.com/file/d/1NXn423L-MO_PS-kCWpUpHHtP6VJnUaPj/view?usp=share_link'
+  cvUrl: 'https://drive.google.com/file/d/1ZE_ybS-8-9EuE3lV0SWZx5fEhVsUzYV2/view?usp=sharing'
 }
 
 export const mail = () => {
